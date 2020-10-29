@@ -1,0 +1,160 @@
+*{
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+}
+
+@font-face {
+        font-family: "Mariogalo";
+        font-style: normal;
+        font-weight: 400;
+        font-display: fallback;
+        src: url("polices/mariogalo.woff") format("woff"), url("polices/mariogalo.woff2") format("woff2");
+    }
+
+@font-face {
+    font-family: "GingarBread";
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: url("polices/GingarBreadDemoSans.woff") format("woff"), url("polcies/GingarBreadDemoSans.woff2") format("woff2");
+    }
+
+
+    /* --------------------------- header----------------------*/
+.photoProfil {
+    width: 20vh;
+    height: 25vh;
+    }
+
+header, footer {
+    background-color: #4f4f4f;
+    }
+
+header {
+    position: fixed;
+    height: 80vh;
+    }
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+li {
+    margin: auto;
+    padding-top: 15%;
+    }
+    
+    li:hover{
+        zoom: 1.02;
+    }
+
+    .picto {
+        height: 6vh;
+    }
+    
+
+/* -------------------- global a toutes les pages dans le body-----------------*/
+
+main{
+    padding-left:20vh;
+}
+
+body {
+    font-family: "GingarBread", sans-serif;
+    color: #0ACBCF;
+    font-size: 12px;
+    }
+
+.titre{
+    background-color: white;
+    height: 5vh;
+    width: 100%;
+}
+
+h1{
+    width: 1200px;
+    text-align: center;
+    font-style: italic;
+    position: fixed;
+    z-index: 2; 
+    }
+
+#phone {
+    height: 100%;
+    max-width: 80%;
+    z-index: 1;
+    margin-left: 2%;
+}
+
+section {
+   /* padding-top: 5vh;*/
+    height: 95vh;
+  /*  background-color: royalblue;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(even){
+     background-color: purple;
+}
+/*-----------------------page accueil-----------------------------*/
+.accueil {
+    display: flex;
+    border: solid green 1px;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.retourAccueil {
+position: absolute;
+top: 3%;
+left: 3%;
+}
+
+
+
+/*-----------------------------page menu-----------------------*/
+.monMenu {display: flex;
+    border: solid purple 1px;
+    height: px;
+    width: 1000px;
+    position: absolute;
+    z-index: 2;
+    margin: 1500px 0 0 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------page contact-----------------------*/
+
+
+#adresse {
+    border: solid black 1px;
+}
+
+/*NON FONCTIONNEL ---------------------------
+#envoyer {
+    background-color: #0ACBCF;
+    border: 1px solid black;
+}
+*/
+
+
+
+/* ----------------------------- footer-------------------------------*/
+
+footer {
+    position: fixed;
+    width: 20vh;  
+}
